@@ -1,0 +1,17 @@
+call plug#begin('~/.vim/plugged')
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+
+
+
+
+set number " Agrega número línea
+set title " Muestra el nombre del archivo en la ventana del terminal
+set mouse=a " Permite la integración del mouse (seleccionar texto, mover el cursor)
+set nowrap " No dividir la línea si es muy larga
+set cursorline " Resalta la línea actual
+set colorcolumn=120 " Muestra la columna límite a 120 caracteres
+set tabstop=2 " tabulador en 2  
+set smartcase " No ignorar mayúsculas si la palabra a buscar contiene mayúsculas
+" set ignorecase " Ignorar mayúsculas al hacer búsquedas
+set relativenumber " Inserta números relativos

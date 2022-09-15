@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/home/jons/Documentos/Ssigel/Zero/HTML/holaMundo'
+let g:netrw_dirhist_5='/home/jons/.vim/plugged/coc.nvim'
+let g:netrw_dirhist_4='/home/jons/.vim/plugged/coc.nvim/plugin'
+let g:netrw_dirhist_3='/home/jons/.vim/plugged/coc.nvim'
+let g:netrw_dirhist_2='/home/jons/.vim/plugged/coc.nvim/autoload'
+let g:netrw_dirhist_1='/home/jons/.vim/plugged/coc.nvim'
