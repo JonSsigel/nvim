@@ -4,6 +4,12 @@ Plug 'preservim/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'easymotion/vim-easymotion'
 Plug 'morhetz/gruvbox'
+Plug 'Badacadabra/vim-archery'
+Plug 'sainnhe/edge' 
+Plug 'saltdotac/citylights.vim'
+Plug 'haishanh/night-owl.vim'
+Plug 'rainglow/vim'
+
 " Cositas
 Plug 'yggdroot/indentline' " para ver linea de todo un bloque identado
 " typing
@@ -15,9 +21,16 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 call plug#end()
 
-colorscheme gruvbox
-let g:gruvbox_constrat_darl = "medium"
-highlight Normal ctermbg=NONE
+"colorscheme bold-contrast
+"colorscheme night-owl
+"colorscheme citylights
+"colorscheme edge
+colorscheme archery
+
+" colorscheme gruvbox
+" let g:gruvbox_constrat_darl =
+" medium"
+" highlight Normal ctermbg=NONE
 
 
 " ################################ Configuracion default COC
