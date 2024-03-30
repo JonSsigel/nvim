@@ -30,9 +30,13 @@ Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
+Plug 'ryanoasis/vim-devicons' " Iconos
 call plug#end()
 
-
+" ################################ devicons
+set encoding=utf8
+set guifont=DroidSansMono_Nerd_Font:h11
+let g:airline_powerline_fonts = 1
 "colorscheme edge
 "colorscheme archery
 colorscheme tender
