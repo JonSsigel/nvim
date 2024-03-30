@@ -1,1 +1,5 @@
-{"html.autoClosingTags": true}
+{"html.autoClosingTags": true,
+	"diagnostic.messageTarget": "float",
+	"diagnostic.checkCurrentLine": true,
+	"diagnostic.virtualText": true
+}
