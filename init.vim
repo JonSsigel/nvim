@@ -1,3 +1,7 @@
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vimrc
+
 call plug#begin('~/.vim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
@@ -19,19 +23,24 @@ Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-surround'
 " Commentary
 Plug 'tpope/vim-commentary'
+"Esquema de colores
+Plug 'jacoborus/tender.vim'
+Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdcommenter'
 call plug#end()
 
-"colorscheme bold-contrast
-"colorscheme night-owl
-"colorscheme citylights
+
 "colorscheme edge
-colorscheme archery
-
+"colorscheme archery
+colorscheme tender
+"colorscheme embark
 " colorscheme gruvbox
-" let g:gruvbox_constrat_darl =
-" medium"
-" highlight Normal ctermbg=NONE
+ let g:gruvbox_constrat_darl ="hard"
+ "highlight Normal ctermbg=NONE
 
+let mapleader=" "
 
 " ################################ Configuracion default COC
 
@@ -168,24 +177,25 @@ command! -nargs=0 OR   :call     CocActionAsync('runCommand', 'editor.action.org
 " provide custom statusline: lightline.vim, vim-airline.
 set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
+" ################################ Comentado de momento por que no lo uso.
 " Mappings for CoCList
 " Show all diagnostics.
-nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
+"nnoremap <silent><nowait> <space>a  :<C-u>CocList diagnostics<cr>
 " Manage extensions.
-nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
+"nnoremap <silent><nowait> <space>e  :<C-u>CocList extensions<cr>
 " Show commands.
-nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
+"nnoremap <silent><nowait> <space>c  :<C-u>CocList commands<cr>
 " Find symbol of current document.
-nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
+"nnoremap <silent><nowait> <space>o  :<C-u>CocList outline<cr>
 " Search workspace symbols.
-nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
+"nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 " Do default action for next item.
-nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
+"nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
-nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
+"nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
-nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
-
+"nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+" ################################ Comentado de momento por que no lo uso.
 
 
 " ################################ Configuracion default COC
@@ -217,6 +227,15 @@ nnoremap <space>k :TmuxNavigateUp<cr>
 " ################################ Easymotion
 "
 
-nmap <space>b <Plug>(easymotion-s2)
+nmap <space>s <Plug>(easymotion-s2)
+
+"################## Personalizados
 nmap <space>w :w<CR>
 nmap <space>q :q<CR>
+nmap <space>d :q!<CR>
+nmap <space>g :wq<CR>
+
+"################################ Fuzzy
+nmap <space>p :Files<CR>
+nmap <space>t :Ag<CR>
+nmap <space>b :Buffer<CR>
