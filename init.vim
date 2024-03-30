@@ -239,3 +239,8 @@ nmap <space>g :wq<CR>
 nmap <space>p :Files<CR>
 nmap <space>t :Ag<CR>
 nmap <space>b :Buffer<CR>
+
+"################################ Salto de 10 líneas.
+
+nnoremap <silent> J 20j
+nnoremap <silent> K 20k
