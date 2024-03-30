@@ -13,6 +13,7 @@ Plug 'sainnhe/edge'
 Plug 'saltdotac/citylights.vim'
 Plug 'haishanh/night-owl.vim'
 Plug 'rainglow/vim'
+Plug 'vim-airline/vim-airline'
 
 " Cositas
 Plug 'yggdroot/indentline' " para ver linea de todo un bloque identado
@@ -244,3 +245,6 @@ nmap <space>b :Buffer<CR>
 
 nnoremap <silent> J 20j
 nnoremap <silent> K 20k
+
+"################################ Terminal
+noremap <space>th :botright new <Bar> :terminal<cr>
