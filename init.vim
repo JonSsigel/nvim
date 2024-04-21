@@ -247,3 +247,6 @@ nnoremap <silent> K 20k
 
 "################################ Terminal
 noremap <space>th :botright new <Bar> :terminal<cr>
+
+"################################ Copiar a portapapeles
+noremap <space>cp "+y
