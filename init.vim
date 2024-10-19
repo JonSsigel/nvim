@@ -215,8 +215,8 @@ set guifont=Hack\ 30
 " Para abrir árbol de archivos
 
 nnoremap <space>nt :NERDTreeFind<CR>
-nmap <space>rs :vertical resize +10<CR>
-nmap <space>rrs :vertical resize -10<CR>
+nmap <space>rs :vertical resize +12<CR>
+nmap <space>rrs :vertical resize -12<CR>
 " ############################### Configuración tmux-navigator
 
 nnoremap <space>h :TmuxNavigateLeft<cr>
