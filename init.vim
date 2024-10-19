@@ -252,3 +252,4 @@ noremap <space>th :botright new <Bar> :terminal<cr>
 noremap <space>cp "+y
 noremap <space>pp "+p
 noremap <space>fw :/
+noremap <space>fe :set fileencoding=ISO-8859-1
