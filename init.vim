@@ -216,7 +216,7 @@ set guifont=Hack\ 30
 
 nnoremap <space>nt :NERDTreeFind<CR>
 nmap <space>rs :vertical resize +12<CR>
-nmap <space>rrs :vertical resize -12<CR>
+nmap <space>rr :vertical resize -12<CR>
 " ############################### Configuración tmux-navigator
 
 nnoremap <space>h :TmuxNavigateLeft<cr>
@@ -251,3 +251,4 @@ noremap <space>th :botright new <Bar> :terminal<cr>
 "################################ copiar a portapapeles
 noremap <space>cp "+y
 noremap <space>pp "+p
+noremap <space>fw :/
