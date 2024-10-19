@@ -7,7 +7,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'easymotion/vim-easymotion'
-Plug 'morhetz/gruvbox'
 Plug 'Badacadabra/vim-archery'
 Plug 'sainnhe/edge' 
 Plug 'saltdotac/citylights.vim'
@@ -26,6 +25,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 "Esquema de colores
 Plug 'jacoborus/tender.vim'
+"Plug 'catppuccin/nvim', {'as':'catppuccin'}
 Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -36,10 +36,8 @@ call plug#end()
 "colorscheme archery
 colorscheme tender
 "colorscheme embark
-" colorscheme gruvbox
- let g:gruvbox_constrat_darl ="hard"
- "highlight Normal ctermbg=NONE
-
+"highlight Normal ctermbg=NONE
+"colorscheme catppuccin
 let mapleader=" "
 
 " ################################ Configuracion default COC
@@ -209,14 +207,16 @@ set colorcolumn=128 " Muestra la columna límite a 120 caracteres
 set ts=3 " tabulador en 2  
 set shiftwidth=3 " tabulador con dos espacios
 set smartcase " No ignorar mayúsculas si la palabra a buscar contiene mayúsculas
-" set ignorecase " Ignorar mayúsculas al hacer búsquedas
+set ignorecase " Ignorar mayúsculas al hacer búsquedas
 set relativenumber " Inserta números relativos
-
+set encoding=utf-8 "Acepta caracteres especiales como la ñ"
+set guifont=Hack\ 30 
 " ################################ Configuracion NerdTree 
 " Para abrir árbol de archivos
 
 nnoremap <space>nt :NERDTreeFind<CR>
-
+nmap <space>rs :vertical resize +10<CR>
+nmap <space>rrs :vertical resize -10<CR>
 " ############################### Configuración tmux-navigator
 
 nnoremap <space>h :TmuxNavigateLeft<cr>
@@ -248,5 +248,6 @@ nnoremap <silent> K 20k
 "################################ Terminal
 noremap <space>th :botright new <Bar> :terminal<cr>
 
-"################################ Copiar a portapapeles
+"################################ copiar a portapapeles
 noremap <space>cp "+y
+noremap <space>pp "+p
