@@ -253,3 +253,4 @@ noremap <space>cp "+y
 noremap <space>pp "+p
 noremap <space>fw :/
 noremap <space>fe :set fileencoding=ISO-8859-1
+noremap <space>jf :%!jq .
