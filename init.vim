@@ -13,7 +13,8 @@ Plug 'saltdotac/citylights.vim'
 Plug 'haishanh/night-owl.vim'
 Plug 'rainglow/vim'
 Plug 'vim-airline/vim-airline'
-
+" iconos
+Plug 'ryanoasis/vim-devicons'
 " Cositas
 Plug 'yggdroot/indentline' " para ver linea de todo un bloque identado
 " typing
@@ -24,18 +25,33 @@ Plug 'tpope/vim-surround'
 " Commentary
 Plug 'tpope/vim-commentary'
 "Esquema de colores
-Plug 'jacoborus/tender.vim'
+Plug 'kvrohit/rasmus.nvim'
+Plug 'andersevenrud/nordic.nvim'
+" If you are using Vim-Plug
+Plug 'shaunsingh/nord.nvim'
+Plug 'olivercederborg/poimandres.nvim'
 "Plug 'catppuccin/nvim', {'as':'catppuccin'}
 Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
+Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 call plug#end()
+
 
 "colorscheme edge
 "colorscheme archery
-colorscheme tender
+"colorscheme moonfly
+"Vim-Script:
+"colorscheme nord "Este es muy bueno, revisar
+" Vim Script
+"colorscheme rasmus "Tercera opción
+colorscheme poimandres "Segunda opcion
+
+"colorscheme nordic
+
 "colorscheme embark
+"colorscheme nordic
 "highlight Normal ctermbg=NONE
 "colorscheme catppuccin
 let mapleader=" "
@@ -209,8 +225,9 @@ set shiftwidth=3 " tabulador con dos espacios
 set smartcase " No ignorar mayúsculas si la palabra a buscar contiene mayúsculas
 set ignorecase " Ignorar mayúsculas al hacer búsquedas
 set relativenumber " Inserta números relativos
-set encoding=utf-8 "Acepta caracteres especiales como la ñ"
-set guifont=Hack\ 30 
+set encoding=UTF-8 "Acepta caracteres especiales como la ñ"
+"set guifont=Hack\ 30 
+"set guifont=DroidSansMono\ Nerd\ Font\ 11
 " ################################ Configuracion NerdTree 
 " Para abrir árbol de archivos
 
