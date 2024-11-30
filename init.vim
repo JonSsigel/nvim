@@ -264,10 +264,14 @@ nnoremap <silent> K 20k
 
 "################################ Terminal
 noremap <space>th :botright new <Bar> :terminal<cr>
+"<Bar>:horizontal resize 12<cr>
 
 "################################ copiar a portapapeles
 noremap <space>cp "+y
 noremap <space>pp "+p
+" buscar una palabra
 noremap <space>fw :/
-noremap <space>fe :set fileencoding=ISO-8859-1
-noremap <space>jf :%!jq .
+" Cambiar a encoding latin1
+noremap <space>fe :set fileencoding=ISO-8859-1<Enter>
+" Dar formato a json
+noremap <space>jf :%!jq .<CR>
