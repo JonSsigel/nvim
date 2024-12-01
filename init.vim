@@ -253,7 +253,7 @@ nmap <space>d :q!<CR>
 nmap <space>g :wq<CR>
 
 "################################ Fuzzy
-nmap <space>p :Files<CR>
+nmap <space>f :Files<CR>
 nmap <space>t :Ag<CR>
 nmap <space>b :Buffer<CR>
 
