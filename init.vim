@@ -268,6 +268,7 @@ noremap <space>th :botright new <Bar> :terminal<cr>
 
 "################################ copiar a portapapeles
 noremap <space>cp "+y
+noremap <space>pp "+p
 " buscar una palabra
 noremap <space>fw :/
 " Cambiar a encoding latin1
