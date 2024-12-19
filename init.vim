@@ -25,8 +25,10 @@ Plug 'tpope/vim-surround'
 " Commentary
 Plug 'tpope/vim-commentary'
 "Esquema de colores
-Plug 'kvrohit/rasmus.nvim'
 Plug 'andersevenrud/nordic.nvim'
+
+Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
+
 " If you are using Vim-Plug
 Plug 'shaunsingh/nord.nvim'
 Plug 'olivercederborg/poimandres.nvim'
@@ -45,8 +47,9 @@ call plug#end()
 "Vim-Script:
 "colorscheme nord "Este es muy bueno, revisar
 " Vim Script
-"colorscheme rasmus "Tercera opción
-colorscheme poimandres "Segunda opcion
+"colorscheme poimandres "Segunda opcion
+
+colorscheme nightfly "Primera opcion
 
 "colorscheme nordic
 
@@ -231,6 +234,7 @@ set encoding=UTF-8 "Acepta caracteres especiales como la ñ"
 " ################################ Configuracion NerdTree 
 " Para abrir árbol de archivos
 
+let NERDTreeWinSize=45
 nnoremap <space>nt :NERDTreeFind<CR>
 nmap <space>rs :vertical resize +12<CR>
 nmap <space>rr :vertical resize -12<CR>
@@ -263,9 +267,7 @@ nnoremap <silent> J 20j
 nnoremap <silent> K 20k
 
 "################################ Terminal
-noremap <space>th :botright new <Bar> :terminal<cr>
-"<Bar>:horizontal resize 12<cr>
-
+noremap <space>th :botright 15new <Bar> :terminal <cr>
 "################################ copiar a portapapeles
 noremap <space>cp "+y
 noremap <space>pp "+p
