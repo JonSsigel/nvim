@@ -25,13 +25,16 @@ Plug 'tpope/vim-surround'
 " Commentary
 Plug 'tpope/vim-commentary'
 "Esquema de colores
-Plug 'andersevenrud/nordic.nvim'
 
+" Tercera opcion de color
 Plug 'bluz71/vim-nightfly-colors', { 'as': 'nightfly' }
 
-" If you are using Vim-Plug
-Plug 'shaunsingh/nord.nvim'
-Plug 'olivercederborg/poimandres.nvim'
+" Segunda opcion de color
+Plug 'miikanissi/modus-themes.nvim'
+
+" Vim-Plug: Primera opcion de color.
+Plug 'Mofiqul/adwaita.nvim'
+
 "Plug 'catppuccin/nvim', {'as':'catppuccin'}
 Plug 'embark-theme/vim', { 'as': 'embark', 'branch': 'main' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -40,23 +43,17 @@ Plug 'preservim/nerdcommenter'
 Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 call plug#end()
 
+"colorscheme nightfly "Tercera opcion de color
 
-"colorscheme edge
-"colorscheme archery
-"colorscheme moonfly
-"Vim-Script:
-"colorscheme nord "Este es muy bueno, revisar
-" Vim Script
-"colorscheme poimandres "Segunda opcion
+" Este está con madres.
+"colorscheme modus " modus_operandi, modus_vivendi y opcion dos de color
 
-colorscheme nightfly "Primera opcion
+"Vim-Script: opción uno para color
+let g:adwaita_darker = v:true " for darker version
+let g:adwaita_disable_cursorline = v:true " to disable cursorline
+"let g:adwaita_transparent = v:true " makes the background transparent
+colorscheme adwaita
 
-"colorscheme nordic
-
-"colorscheme embark
-"colorscheme nordic
-"highlight Normal ctermbg=NONE
-"colorscheme catppuccin
 let mapleader=" "
 
 " ################################ Configuracion default COC
@@ -228,7 +225,7 @@ set shiftwidth=3 " tabulador con dos espacios
 set smartcase " No ignorar mayúsculas si la palabra a buscar contiene mayúsculas
 set ignorecase " Ignorar mayúsculas al hacer búsquedas
 set relativenumber " Inserta números relativos
-set encoding=UTF-8 "Acepta caracteres especiales como la ñ"
+set encoding=UTF-8 "Acepta caracteres especiales como la ñ
 "set guifont=Hack\ 30 
 "set guifont=DroidSansMono\ Nerd\ Font\ 11
 " ################################ Configuracion NerdTree 
