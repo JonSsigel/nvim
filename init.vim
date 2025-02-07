@@ -220,8 +220,8 @@ set mouse=a " Permite la integración del mouse (seleccionar texto, mover el cur
 set nowrap " No dividir la línea si es muy larga
 set cursorline " Resalta la línea actual
 set colorcolumn=128 " Muestra la columna límite a 120 caracteres
-set ts=3 " tabulador en 2  
-set shiftwidth=3 " tabulador con dos espacios
+set ts=2 " tabulador en 2  
+set shiftwidth=2 " tabulador con dos espacios
 set smartcase " No ignorar mayúsculas si la palabra a buscar contiene mayúsculas
 set ignorecase " Ignorar mayúsculas al hacer búsquedas
 set relativenumber " Inserta números relativos
