@@ -264,7 +264,7 @@ nnoremap <silent> J 20j
 nnoremap <silent> K 20k
 
 "################################ Terminal
-noremap <space>th :botright 13new <Bar> :terminal <cr>
+noremap <space>th :botright 16new <Bar> :terminal <cr>
 "################################ copiar a portapapeles
 noremap <space>cp "+y
 noremap <space>pp "+p
